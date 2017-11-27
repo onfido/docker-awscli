@@ -16,4 +16,4 @@ if [ ! -z "$AWS_ASSUME_ROLE" ] && [ ! -z "$AWS_ROLE_SESSION_NAME" ]; then
   rm $AWS_CREDENTIAL_FILE
 fi
 
-/usr/bin/aws $@
+/usr/bin/aws "$@"
